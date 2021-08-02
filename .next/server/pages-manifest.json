@@ -1,0 +1,15 @@
+{
+  "/catering": "pages/catering.html",
+  "/contacta": "pages/contacta.html",
+  "/elespacio": "pages/elespacio.html",
+  "/eventos": "pages/eventos.html",
+  "/": "pages/index.html",
+  "/lacarta": "pages/lacarta.html",
+  "/politicas": "pages/politicas.html",
+  "/reservas": "pages/reservas.html",
+  "/slowfood": "pages/slowfood.html",
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
