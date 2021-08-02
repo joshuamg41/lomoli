@@ -347,46 +347,46 @@ const footer = () => {
 const Container = props => /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
   children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)((head_default()), {
     children: [/*#__PURE__*/jsx_runtime_.jsx("title", {
-      className: "jsx-1771648213",
+      className: "jsx-781947885",
       children: "Lomoli"
     }), /*#__PURE__*/jsx_runtime_.jsx("link", {
       rel: "stylesheet",
       href: "https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css",
       integrity: "sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l",
       crossorigin: "anonymous",
-      className: "jsx-1771648213"
+      className: "jsx-781947885"
     }), /*#__PURE__*/jsx_runtime_.jsx("link", {
       rel: "stylesheet",
       href: "/style.css",
-      className: "jsx-1771648213"
+      className: "jsx-781947885"
     }), /*#__PURE__*/jsx_runtime_.jsx("meta", {
       name: "viewport",
       content: "width=device-width, initial-scale=1",
-      className: "jsx-1771648213"
+      className: "jsx-781947885"
     }), /*#__PURE__*/jsx_runtime_.jsx("script", {
       src: "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js",
       integrity: "sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0",
       crossorigin: "anonymous",
-      className: "jsx-1771648213"
+      className: "jsx-781947885"
     }), /*#__PURE__*/jsx_runtime_.jsx("script", {
       src: "https://kit.fontawesome.com/e32e6a3f43.js",
       crossorigin: "anonymous",
-      className: "jsx-1771648213"
+      className: "jsx-781947885"
     })]
   }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-    className: "jsx-1771648213" + " " + "center",
+    className: "jsx-781947885" + " " + "center",
     children: [/*#__PURE__*/jsx_runtime_.jsx(components_topBar, {}), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-      className: "jsx-1771648213" + " " + "Container",
+      className: "jsx-781947885" + " " + "Container",
       children: [/*#__PURE__*/jsx_runtime_.jsx(navigation, {}), /*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
-        className: "jsx-1771648213" + " " + "centerr",
+        className: "jsx-781947885" + " " + "centerr",
         children: [props.children, /*#__PURE__*/jsx_runtime_.jsx("span", {
-          className: "jsx-1771648213"
+          className: "jsx-781947885"
         }), /*#__PURE__*/jsx_runtime_.jsx(components_footer, {})]
       }), /*#__PURE__*/jsx_runtime_.jsx(components_social, {})]
     })]
   }), /*#__PURE__*/jsx_runtime_.jsx((style_default()), {
-    id: "1771648213",
-    children: [".center.jsx-1771648213{position:absolute;min-width:350px;margin:0 auto;padding:0;}", "@media(min-width:765px){.center.jsx-1771648213{width:100%;padding:0;}.centerr.jsx-1771648213{margin:0 auto;}.Container.jsx-1771648213{display:grid;grid-template-columns:repeat(3,1fr);width:65%;margin:0 auto;text-align:center;}}", ".Container.jsx-1771648213{padding:0 10px;}", ".img.jsx-1771648213{max-width:100%;height:auto;}", "span.jsx-1771648213{margin-top:40px;}"]
+    id: "781947885",
+    children: [".center.jsx-781947885{position:absolute;min-width:350px;margin:0 auto;padding:0;}", "@media(min-width:765px){.center.jsx-781947885{width:100%;padding:0;}.centerr.jsx-781947885{margin:0 auto;}.Container.jsx-781947885{display:grid;grid-template-columns:repeat(3,1fr);width:65%;margin:0 auto;}}", ".Container.jsx-781947885{padding:0 10px;}", ".img.jsx-781947885{max-width:100%;height:auto;}", "span.jsx-781947885{margin-top:40px;}"]
   })]
 });
 

@@ -8,7 +8,7 @@ const Index = () => {
                 <title>Lomoli - Bienvenidos</title>
             </Head>
             <div className="main">
-                <img src="/platoMoli.jpg" />
+                <img src="/plato.jpg" alt="platolomoli" />
                 <p>Un antiguo molino de aceite de la comarca convertido en celler restaurante y
                     ahora rescatado por Albert Guillén Group para crear un nuevo restaurante de
                     cocina tradicional, sostenible y con clasificación SlowFood Km.0, pero dándole
@@ -38,4 +38,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default Index;

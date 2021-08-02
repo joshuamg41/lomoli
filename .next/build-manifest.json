@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/fOFRuCV30rqrMbyHVHngW/_buildManifest.js",
-    "static/fOFRuCV30rqrMbyHVHngW/_ssgManifest.js"
+    "static/hqUl4SXkFeWhhZlToSTGk/_buildManifest.js",
+    "static/hqUl4SXkFeWhhZlToSTGk/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -14,7 +14,7 @@
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/index-44371b7f4c548669cad7.js"
+      "static/chunks/pages/index-5bb130147dca42635b24.js"
     ],
     "/_app": [
       "static/chunks/webpack-672781b4256b347cef75.js",
@@ -33,56 +33,56 @@
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/catering-c2c160b599287b80c935.js"
+      "static/chunks/pages/catering-c1346e294e943d7ba160.js"
     ],
     "/contacta": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/contacta-c48e05478f1adefe01bf.js"
+      "static/chunks/pages/contacta-fb2f434e594ee1628f4a.js"
     ],
     "/elespacio": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/elespacio-c649452388663627a0e2.js"
+      "static/chunks/pages/elespacio-d2fc8a27527a142811b7.js"
     ],
     "/eventos": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/eventos-a2ca48d653cfa6f0d419.js"
+      "static/chunks/pages/eventos-066b527a71b0825134bf.js"
     ],
     "/lacarta": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/lacarta-739d54088935b912a645.js"
+      "static/chunks/pages/lacarta-4114c084de09baa1de97.js"
     ],
     "/politicas": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/politicas-a9e416577d30821c797d.js"
+      "static/chunks/pages/politicas-447f5db2689616969faa.js"
     ],
     "/reservas": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/reservas-b540028a17b38661e8a3.js"
+      "static/chunks/pages/reservas-0042a65d112060aaf979.js"
     ],
     "/slowfood": [
       "static/chunks/webpack-672781b4256b347cef75.js",
       "static/chunks/framework-92300432a1172ef1338b.js",
       "static/chunks/main-c034215587cd157b2989.js",
       "static/chunks/184-beb81c9e61c6048a393e.js",
-      "static/chunks/pages/slowfood-70191e43869e6858b7ff.js"
+      "static/chunks/pages/slowfood-74c5f48bb104eb4de688.js"
     ]
   },
   "ampFirstPages": []

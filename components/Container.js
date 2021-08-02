@@ -49,7 +49,6 @@ const Container = (props) => (
                     grid-template-columns: repeat(3, 1fr);
                     width:65%;
                     margin:0 auto;
-                    text-align:center;
                 }}
                 .Container {
                     padding: 0 10px;
