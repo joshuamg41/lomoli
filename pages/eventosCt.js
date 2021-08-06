@@ -7,7 +7,7 @@ const eventosCt = () => {
                 <title>lomoli-Eseveniment</title>
             </Head>
             <div className="main">
-                <h1>EVENTOS</h1>
+                <h1>ESVENIMENT</h1>
                 <img src="/table-wedding.jpg" />
                 <p>En Lo Molí podem oferir-te moments especials per als teus esdeveniment, tant 
 a la nostra sala com a la nostra terrezza. Petits i íntims esdeveniments cuidats 

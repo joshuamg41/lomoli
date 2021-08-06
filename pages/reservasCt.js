@@ -1,9 +1,22 @@
 import Head from "next/head"
 import Container from "../components/ContainerCt";
+import emailjs from 'emailjs-com';
+
 const reservas = () => {
+    
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
 
 
-    const handleSubmit = async (e) => {
+   /* const handleSubmit = async (e) => {
         
         e.preventDefault()
         const res = await fetch(
@@ -25,7 +38,7 @@ const reservas = () => {
               method: 'POST'
             }
           )
-    }
+    }*/
     return (
         <Container>
             <Head><title>lomoli-Reservas</title></Head>
@@ -33,13 +46,13 @@ const reservas = () => {
                 <h1>RESERVA LA TEVA TAULA</h1>
                 <span></span>
                 <h3>Omple el formulari per poder reservar el seu espai</h3>
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={sendEmail}>
                 <h2>COMENSAL</h2>
                 <span></span>
                 <div className="inputs">
-                    <input type="text" placeholder="Nom" />
-                    <input type="mail" placeholder="Correu" />
-                    <input type="number" placeholder="Teléfono" />
+                    <input name="nombre" type="text" placeholder="Nom" />
+                    <input name="correo" type="mail" placeholder="Correu" />
+                    <input name="numero" type="number" placeholder="Teléfono" />
                 </div>
                 <h2>VULL RESERVAR</h2>
                 <span></span>
@@ -67,8 +80,8 @@ const reservas = () => {
                 </div>
                 <div className="permisos">
                     <div>
-                        <input type="radio" id="permiso" name="drone" value="huey" checked />
-                        <input type="radio" id="permisos" name="drone" value="huey" />
+                    <input type="checkbox" id="permiso" name="promociones"/>
+                            <input type="checkbox" id="permisos" name="cookie" />
                     </div>
                     <div>
                         <label htmlFor="permiso">Acepto recibir noticias y promociones del restaurante</label>

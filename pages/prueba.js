@@ -1,7 +1,34 @@
 import React, { useState, useEffect } from 'react';
+import emailjs from 'emailjs-com';
 
 const prueba = () => {
-     // Definimos los estados
+  
+    function sendEmail(e) {
+      e.preventDefault();
+  
+      emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+  
+    return (
+      <form className="contact-form" onSubmit={sendEmail}>
+        <input type="hidden" name="contact_number" />
+        <label>Name</label>
+        <input type="text" name="nombre" />
+        <label>Email</label>
+        <input type="email" name="correo" />
+        <label>Message</label>
+        <textarea name="espacio" />
+        <input type="submit" value="Send" />
+      </form>
+    );
+  }
+
+   /*  // Definimos los estados
      const [name, setName] = useState(String)
      const [count, setCount] = useState(false)
  
@@ -30,7 +57,7 @@ const prueba = () => {
           Sus clicks {count}
       </div>
   )
-}
+}*/
 
 export default prueba;
 

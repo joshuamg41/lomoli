@@ -3,9 +3,18 @@ import Container from "../components/Container"
 
 const reservas = () => {
 
-   
+    function sendEmail(e) {
+        e.preventDefault();
     
-    const handleSubmit = async (e) => {
+        emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
+    
+   /* const handleSubmit = async (e) => {
         e.preventDefault()
         const res = await fetch(
             'http://localhost:4000/api/reservas/createreservas',
@@ -28,7 +37,7 @@ const reservas = () => {
               method: 'POST'
             }
           )
-    }
+    }*/
 
     return (
         <Container>
@@ -37,7 +46,7 @@ const reservas = () => {
                 <h1>RESERVA TU MESA</h1>
                 <span></span>
                 <h3>Rellena el formulario para poder reservar tu espacio</h3>
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={ sendEmail} >
                     <h2>COMENSAL</h2>
                     <span></span>
                     <div className="inputs">

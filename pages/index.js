@@ -43,7 +43,6 @@ const Index = () => {
                     width: 100%;}
                 `}
             </style>
-            <button onClick={() => setCount(!count) }>Click Me</button>
         </Container>
     )
 }
