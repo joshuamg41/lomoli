@@ -52,7 +52,7 @@ const reservas = () => {
                 <div className="inputs">
                     <input name="nombre" type="text" placeholder="Nom" />
                     <input name="correo" type="mail" placeholder="Correu" />
-                    <input name="numero" type="number" placeholder="Teléfono" />
+                    <input name="telefono" type="number" placeholder="Teléfono" />
                 </div>
                 <h2>VULL RESERVAR</h2>
                 <span></span>

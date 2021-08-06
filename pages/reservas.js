@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Container from "../components/Container"
+import emailjs from 'emailjs-com';
 
 const reservas = () => {
 
