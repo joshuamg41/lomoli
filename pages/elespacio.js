@@ -22,7 +22,7 @@ const elspacio = () => {
                 </p>
                 <span></span>
                 <div className="terrassetaCenter">
-                    <img className="terrassetLogo" src="terrasseta.png" alt="terrasseta" />
+                    <img className="terrassetLogo" src="Terrasseta.png" alt="terrasseta" />
                 </div>
                 <img src="/Terraza_01.jpg" alt="lomoli terraza" />
                 <p>

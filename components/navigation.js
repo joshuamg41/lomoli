@@ -45,13 +45,11 @@ const Navigation = () => {
                             </Link>
                         </div>
                         <div>
-                            <Link href="/">
-                                <a>INSTAGRAM</a>
-                            </Link>
+                            <a href="https://www.instagram.com/lomolirestaurant/?hl=es" target="_blank">INSTAGRAM</a>
                             <Link href="/politicas">
                                 <a>POLITICAS</a>
                             </Link>
-                            <Link href="/catalam">
+                            <Link href="/benvinguts">
                                 <a>CATALAM</a>
                             </Link>
                         </div>
@@ -130,6 +128,7 @@ const Navigation = () => {
         li a {
             color: rgb(167, 167, 167);
             text-decoration: none;
+            font-size:14px;
         }
         li a:hover{
             color: rgb(93, 114, 97);

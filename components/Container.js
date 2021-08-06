@@ -1,8 +1,9 @@
 import Head from "next/head"
-import Navigation from "./navigation.js";
 import TopBar from "./topBar";
-import Social from "./social.js";
 import Footer from "./footer"
+import Navigation from "./navigation.js";
+import Social from "./social.js";
+
 
 const Container = (props) => (
     <>

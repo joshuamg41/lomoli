@@ -12,9 +12,9 @@ const eventos = () => {
                 <img src="/table-wedding.jpg" />
                 <p>En Lo Molí podemos ofrecerte momentos especiales para tus evento, tanto en
                     nuestra sala como en nuestra terrezza. Pequeños e íntimos eventos cuidados
-                    hasta el último detalle
+                    hasta el último detalle.
                 </p>
-                <a href="">SOLICITAR EVENTO</a>
+                <button>SOLICITAR</button>
 
             </div>
             <style jsx>{`

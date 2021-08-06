@@ -17,12 +17,12 @@ const slowfood = () => {
                     En Lo Molí cocinamos platos Km0 en los que priorizamos la agricultura
                     cercana y ecológica, empleamos alimentos de temporada, evitamos el uso de
                     transgénicos, recuperamos productos del Arca del Gusto y los Baluartes de
-                    Slow Food y pescado capturado de forma sostenible
+                    Slow Food y pescado capturado de forma sostenible.
                 </p>
                 <p>
                     Cocinamos desde el corazón y trabajamos con alimentos de máxima calidad
                     compartiendo nuestro conocimiento con otros restaurantes Km0 para mejorar
-                    el vínculo entre la tierra y la gastronomía local
+                    el vínculo entre la tierra y la gastronomía local.
                 </p>
             </div>
             <style jsx>{`

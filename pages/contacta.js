@@ -14,10 +14,11 @@ const contacta = () => {
                 <h1 className="mt-5">HORARIOS</h1>
                 <span></span>
                 <div className="horarios">
-                    <div>
+                    <div className="horarios-left">
                         <h4>LUNES CERRADO</h4>
                         <h4>MARTES A JUEVES</h4>
                         <h4>VIERNES Y SÁBADO</h4>
+                        <h4 className="blanco">""</h4>
                         <h4>DOMINGO</h4>
                     </div>
                     <div>
@@ -37,7 +38,7 @@ const contacta = () => {
                 <input type="number" placeholder="Telefono" />
                 <h2>OBSERVACIONES</h2>
                 <textarea name="" id="" cols="47.8" rows="5"></textarea>
-                <div> <a>ENVIAR</a></div>
+                <div> <button>ENVIAR</button></div>
               
             </div>
             <style jsx>{`
@@ -46,9 +47,11 @@ const contacta = () => {
                     padding-left:10px;
                     margin-bottom:10px;
                 }
+                .blanco{
+                    color:white;
+                }
                 .horarios{
-                    display:flex;
-                    gap:60px;
+                    display:flex;           
                 }
                 span {
                     margin-bottom:20px;
@@ -71,6 +74,9 @@ const contacta = () => {
                             padding:1rem;
                             width: 90%
                             resize: none;
+                        }
+                        .horarios-left{
+                            margin:0 120px 0 0;
                         }
                     }
                 `}

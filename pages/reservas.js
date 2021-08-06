@@ -2,6 +2,34 @@ import Head from "next/head"
 import Container from "../components/Container"
 
 const reservas = () => {
+
+   
+    
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        const res = await fetch(
+            'http://localhost:4000/api/reservas/createreservas',
+            {
+              body: JSON.stringify({
+                comensal : e.target.nombre.value,
+                correo : e.target.correo.value,
+                telefono: e.target.telefono.value,
+               // instagram: e.target.instagram.value,
+               espacio : e.target.espacio.value,
+                 pax: e.target.comensales.value,
+               fecha: e.target.fecha.value,
+                hora: e.target.hora.value,
+                promociones: e.target.promociones.value,
+                cookie: e.target.cookie.value
+              }),
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              method: 'POST'
+            }
+          )
+    }
+
     return (
         <Container>
             <Head><title>lomoli-Reservas</title></Head>
@@ -9,40 +37,54 @@ const reservas = () => {
                 <h1>RESERVA TU MESA</h1>
                 <span></span>
                 <h3>Rellena el formulario para poder reservar tu espacio</h3>
-                <h2>COMENSAL</h2>
-                <span></span>
-                <div className="inputs">
-                    <input type="text" placeholder="Nombre" />
-                    <input type="mail" placeholder="Correo" />
-                    <input type="number" placeholder="Teléfono" />
-                </div>
-                <h2>QUIERO RESERVAR</h2>
-                <span></span>
-                <select name="espacio">
-                    <option value="">Espacio</option>
-                    <option>Terraza</option>
-                    <option>Interior</option>
-                </select>
-                <select name="comensales">
-                    <option value="">Numero de Comensales</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                </select>
-                <div className="date">
-                    <label>Fecha</label>
-                    <input type="date" />
-                    <label className="hora">Hora</label>
-                    <input type="time" />
-                </div>
-                <h2>SOLICITUDES</h2>
-                <textarea name="solicitudes" id="solicitudes" cols="47.8" rows="5"></textarea>
-                <a>SOLICITAR RESERVA</a>
+                <form onSubmit={handleSubmit} >
+                    <h2>COMENSAL</h2>
+                    <span></span>
+                    <div className="inputs">
+                        <input name="nombre" type="text" placeholder="Nombre" />
+                        <input name="correo" type="mail" placeholder="Correo" />
+                        <input name="telefono" type="number" placeholder="Teléfono" />
+                        <input name="instagram" type="text" placeholder="Instagram" />
+                    </div>
+                    <h2>QUIERO RESERVAR</h2>
+                    <span></span>
+                    <select name="espacio"  >
+                        <option value="">Espacio</option>
+                        <option>Terraza</option>
+                        <option>Interior</option>
+                    </select>
+                    <select name="comensales" >
+                        <option value="1" >Numero de Comensales</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>
+                    <div className="date">
+                        <label>Fecha</label>
+                        <input name="fecha" type="date" min="2021-08-06"/>
+                        <label className="hora">Hora</label>
+                        <input name="hora" type="time" min="13:00" max="16:00" />
+                    </div>
+                    <div className="permisos">
+                        <div>
+                            <input type="checkbox" id="permiso" name="promociones"/>
+                            <input type="checkbox" id="permisos" name="cookie" />
+                        </div>
+                        <div>
+                            <label htmlFor="permiso">Acepto recibir noticias y promociones del restaurante</label>
+                            <label htmlFor="permisos">He leído las Políticas de empresa y acepto las condiciones </label>
+                        </div>
+                    </div>
+                    <h2>SOLICITUDES</h2>
+                    <textarea name="solicitudes" id="solicitudes" cols="47.8" rows="5"></textarea>
+                    <button type="submit" className="d-block">SOLICITAR</button>
+                </form>
+
             </div>
             <style jsx>{`
          
@@ -92,6 +134,17 @@ const reservas = () => {
                 width:85%;
                 margin-top:8px;
             }
+            .permisos{
+                display: grid;
+                grid-template-columns: 5% 95%;
+                margin-top:20px;
+                align-items:center;
+            }
+            .permisos label{
+                font-size:12px;
+                color: rgb(167, 167, 167); 
+                margin-bottom: 0;  
+            }
             img { 
                 height: auto;
                  width: 100%;
@@ -117,4 +170,31 @@ const reservas = () => {
         </Container>
     )
 }
+
+/*export async function getServerSideProps(){
+    const res = await fetch('https://api.github.com/users/fazttech')
+    const data = await res.json();
+    console.log(data)
+    return {
+        props: {
+
+        }
+    }
+}*/
+/* async function handleOnSubmit(e){
+      e.preventDefault();
+      const formdata = {} 
+      Array.from(e.currentTarget.elements).forEach(field => {
+          if (!field.name) return;
+          formdata[field.name] = field.value;
+
+      });
+      await fetch('http://localhost:4000/api/reservas/createreservas', {
+          method: 'post',
+          body: JSON.stringify({
+              local:"terraza"
+          })
+      })    
+      console.log(formdata);     
+  }*/
 export default reservas;

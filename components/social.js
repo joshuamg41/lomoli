@@ -3,22 +3,20 @@ const social = () => {
     return (<>
         <ul>
             <li>
-                <Link  href="/">
-                    <a>INSTAGRAM</a>
-                </Link>
+                <a href="https://www.instagram.com/lomolirestaurant/?hl=es" target="_blank">INSTAGRAM</a>
             </li>
             <li>
-                <Link  href="/politicas">
+                <Link href="/politicas">
                     <a>POLITICAS</a>
                 </Link>
             </li>
             <li>
-                <Link  href="/catalam">
-                    <a>CATALAM</a>
+                <Link href="/benvinguts">
+                    <a>CATALAN</a>
                 </Link>
                 <span></span>
             </li>
-            
+
             <img src="/SlowFood logo.png" className="logo-slowfood" alt="slow food" />
         </ul>
         <style jsx>
@@ -37,6 +35,7 @@ const social = () => {
                 display:block;
                 color: rgb(167, 167, 167);
                 text-decoration: none;
+                font-size:14px
             }
             li a:hover{
                 color: rgb(93, 114, 97);
@@ -62,7 +61,7 @@ const social = () => {
             }
             `}
         </style>
-        </>
+    </>
     )
 }
 export default social;

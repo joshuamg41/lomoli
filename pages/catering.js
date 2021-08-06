@@ -15,7 +15,7 @@ const catering = () => {
                     acorde a tus invitados. Los mejores productos artesanales y auctóctonos
                     harán de tu catering la estrella del evento.
                 </p>
-                <a href="">SOLICITAR EVENTO</a>
+                <button>SOLICITAR</button>
 
             </div>
             <style jsx>{`

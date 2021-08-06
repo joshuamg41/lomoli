@@ -17,7 +17,7 @@ const lacarta = () => {
                 <p>
                     Nuestros productos llegan directos cada día de las granjas, huertas y
                     artesanos de la región, con los que trabajamos día a día para ofrecerte y
-                    cocinarte el mejor producto
+                    cocinarte el mejor producto.
                 </p>
             </div>
             <style jsx>{`

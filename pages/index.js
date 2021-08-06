@@ -1,7 +1,16 @@
+import React, { useState, useEffect } from 'react';
 import Head from "next/head";
 import Container from "../components/Container";
 
 const Index = () => {
+
+    const [count, setCount] = useState(false)
+
+    useEffect(() => {
+        document.title = `Sus clicks ${count}`
+        console.log(`El numero es: ${count}`)
+    })
+
     return (
         <Container>
             <Head>
@@ -34,6 +43,7 @@ const Index = () => {
                     width: 100%;}
                 `}
             </style>
+            <button onClick={() => setCount(!count) }>Click Me</button>
         </Container>
     )
 }
