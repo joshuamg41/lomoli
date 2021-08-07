@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Container from "../components/Container"
+import swal from "sweetalert";
 import emailjs from 'emailjs-com';
 
 const reservas = () => {
@@ -9,7 +10,7 @@ const reservas = () => {
     
         emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
           .then((result) => {
-              console.log(result.text);
+              swal(" Gracias por solicitar su reserva. En breve le confirmaremos.");
           }, (error) => {
               console.log(error.text);
           });

@@ -1,6 +1,20 @@
 import Container from "../components/Container"
 import Head from "next/head";
+import emailjs from 'emailjs-com';
+import swal from "sweetalert";
 const contacta = () => {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+            .then((result) => {
+                swal(" Gracias por solicitar su reserva. En breve le confirmaremos.");
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
+
     return (
         <Container>
             <Head><title>lomoli-Contacta</title></Head>
@@ -33,13 +47,15 @@ const contacta = () => {
                 </div>
                 <h1 className="mt-5">CONTACTA</h1>
                 <span></span>
-                <input type="text" placeholder="Nomb" />
-                <input type="mail" placeholder="Correu" />
-                <input type="number" placeholder="Telefon" />
-                <h2>OBSERVACIONS</h2>
-                <textarea name="" id="" cols="47.8" rows="5"></textarea>
-                <div> <button>ENVIAR</button></div>
-              
+                <form onSubmit={sendEmail} >
+                    <input name="nombre" type="text" placeholder="Nomb" />
+                    <input name="correo" type="mail" placeholder="Correu" />
+                    <input name="telefono" type="number" placeholder="Telefon" />
+                    <h2>OBSERVACIONS</h2>
+                    <textarea name="solicitudes" cols="47.8" rows="5"></textarea>
+                    <button>ENVIAR</button>
+                </form>
+
             </div>
             <style jsx>{`
                 h2{

@@ -48,7 +48,8 @@ const Container = (props) => (
                 .Container {
                     display: grid;
                     grid-template-columns: repeat(3, 1fr);
-                    width:65%;
+                    width:100%;
+                    max-width:1080px;
                     margin:0 auto;
                 }}
                 .Container {

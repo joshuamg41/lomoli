@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Container from "../components/ContainerCt";
+import Link from 'next/link'
 const eventosCt = () => {
     return (
         <Container>
@@ -9,11 +10,13 @@ const eventosCt = () => {
             <div className="main">
                 <h1>ESVENIMENT</h1>
                 <img src="/table-wedding.jpg" />
-                <p>En Lo Molí podem oferir-te moments especials per als teus esdeveniment, tant 
-a la nostra sala com a la nostra terrezza. Petits i íntims esdeveniments cuidats 
-fins l'últim detall.
+                <p>En Lo Molí podem oferir-te moments especials per als teus esdeveniment, tant
+                    a la nostra sala com a la nostra terrezza. Petits i íntims esdeveniments cuidats
+                    fins l'últim detall.
                 </p>
-                <button>SOL·LICITAR</button>
+                <Link href="/contactaCt">
+                    <a>SOL·LICITAR</a>
+                </Link>
 
             </div>
             <style jsx>{`

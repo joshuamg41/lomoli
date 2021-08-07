@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Container from "../components/Container"
+import Link from 'next/link'
 
 const eventos = () => {
     return (
@@ -14,7 +15,9 @@ const eventos = () => {
                     nuestra sala como en nuestra terrezza. Pequeños e íntimos eventos cuidados
                     hasta el último detalle.
                 </p>
-                <button>SOLICITAR</button>
+                <Link href="/contacta">
+                    <a>SOLICITAR</a>
+                </Link>
 
             </div>
             <style jsx>{`

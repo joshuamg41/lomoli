@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from 'next/link'
 import Container from "../components/ContainerCt";
 const cateringCt = () => {
     return (
@@ -9,12 +10,14 @@ const cateringCt = () => {
             <div className="main">
                 <h1>CATERING</h1>
                 <img src="/catering-ibiza_2.jpg" />
-                <p>La cuina de Lo Molí pot preparar els nostres plats Slow Food en base al nostre 
-Menú de Temporada o pot prapararte sota els teus gustos un menú concorde 
-als teus convidats. Els millors productes artesanals i auctóctonos faran del teu 
-càtering l'estrella de l'esdeveniment.
+                <p>La cuina de Lo Molí pot preparar els nostres plats Slow Food en base al nostre
+                    Menú de Temporada o pot prapararte sota els teus gustos un menú concorde
+                    als teus convidats. Els millors productes artesanals i auctóctonos faran del teu
+                    càtering l'estrella de l'esdeveniment.
                 </p>
-                <button>SOL·LICITAR</button>
+                <Link href="/contactaCt">
+                    <a>SOL·LICITAR</a>
+                </Link>
 
             </div>
             <style jsx>{`

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from 'next/link'
 import Container from "../components/Container";
 
 const catering = () => {
@@ -15,7 +16,9 @@ const catering = () => {
                     acorde a tus invitados. Los mejores productos artesanales y auctóctonos
                     harán de tu catering la estrella del evento.
                 </p>
-                <button>SOLICITAR</button>
+                <Link href="/contacta">
+                    <a>SOLICITAR</a>
+                </Link>
 
             </div>
             <style jsx>{`
