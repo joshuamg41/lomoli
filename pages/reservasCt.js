@@ -77,7 +77,7 @@ const reservas = () => {
                     <label>Fecha</label>
                     <input name="fecha" type="date" />
                     <label className="hora">Hora</label>
-                    <input name="hora" type="time" />
+                    <input name="hora" type="time" min="13:00" max="23:00" />
                 </div>
                 <div className="permisos">
                     <div>
