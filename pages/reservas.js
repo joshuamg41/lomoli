@@ -8,7 +8,7 @@ const reservas = () => {
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+        emailjs.sendForm('lomoli', 'template_9ryeet9', e.target, 'user_78Gpd36t9QDfFTquJuuma')
           .then((result) => {
               swal(" Gracias por solicitar su reserva. En breve le confirmaremos.");
           }, (error) => {
@@ -52,9 +52,9 @@ const reservas = () => {
                     <h2>COMENSAL</h2>
                     <span></span>
                     <div className="inputs">
-                        <input name="nombre" type="text" placeholder="Nombre" />
-                        <input name="correo" type="mail" placeholder="Correo" />
-                        <input name="telefono" type="number" placeholder="Teléfono" />
+                        <input name="nombre" type="text" placeholder="Nombre" required/>
+                        <input name="correo" type="mail" placeholder="Correo" required />
+                        <input name="telefono" type="number" placeholder="Teléfono" required/>
                         <input name="instagram" type="text" placeholder="Instagram" />
                     </div>
                     <h2>QUIERO RESERVAR</h2>
@@ -77,14 +77,14 @@ const reservas = () => {
                     </select>
                     <div className="date">
                         <label>Fecha</label>
-                        <input name="fecha" type="date" min="2021-08-06"/>
+                        <input name="fecha" type="date" min="2021-08-06" required/>
                         <label className="hora">Hora</label>
-                        <input name="hora" type="time" min="13:00" max="23:00" />
+                        <input name="hora" type="time" min="13:00" max="23:00" required/>
                     </div>
                     <div className="permisos">
                         <div>
-                            <input type="checkbox" id="permiso" name="promociones"/>
-                            <input type="checkbox" id="permisos" name="cookie" />
+                            <input type="checkbox" id="permiso" name="promociones" />
+                            <input type="checkbox" id="permisos" name="cookie" required/>
                         </div>
                         <div>
                             <label htmlFor="permiso">Acepto recibir noticias y promociones del restaurante</label>

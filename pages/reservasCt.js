@@ -8,7 +8,7 @@ const reservas = () => {
     function sendEmail(e) {
         e.preventDefault();
     
-        emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+        emailjs.sendForm('lomoli', 'template_9ryeet9', e.target, 'user_78Gpd36t9QDfFTquJuuma')
           .then((result) => {
               swal("Gràcies per sol·licitar la seva reserva. En breu li confirmarem.");
           }, (error) => {
@@ -51,9 +51,9 @@ const reservas = () => {
                 <h2>COMENSAL</h2>
                 <span></span>
                 <div className="inputs">
-                    <input name="nombre" type="text" placeholder="Nom" />
-                    <input name="correo" type="mail" placeholder="Correu" />
-                    <input name="telefono" type="number" placeholder="Teléfono" />
+                    <input name="nombre" type="text" placeholder="Nom" required/>
+                    <input name="correo" type="mail" placeholder="Correu" required/>
+                    <input name="telefono" type="number" placeholder="Teléfono" required/>
                 </div>
                 <h2>VULL RESERVAR</h2>
                 <span></span>
@@ -63,7 +63,7 @@ const reservas = () => {
                     <option>Interior</option>
                 </select>
                 <select name="comensales">
-                    <option>Numero Comensales</option>
+                    <option value="1">Numero Comensales</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -75,14 +75,14 @@ const reservas = () => {
                 </select>
                 <div className="date">
                     <label>Fecha</label>
-                    <input name="fecha" type="date" />
+                    <input name="fecha" type="date" required />
                     <label className="hora">Hora</label>
-                    <input name="hora" type="time" min="13:00" max="23:00" />
+                    <input name="hora" type="time" min="13:00" max="23:00" required/>
                 </div>
                 <div className="permisos">
                     <div>
                     <input type="checkbox" id="permiso" name="promociones"/>
-                            <input type="checkbox" id="permisos" name="cookie" />
+                            <input type="checkbox" id="permisos" name="cookie" required/>
                     </div>
                     <div>
                         <label htmlFor="permiso">Acepto recibir noticias y promociones del restaurante</label>

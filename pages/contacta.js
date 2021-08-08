@@ -7,9 +7,9 @@ const contacta = () => {
     function sendEmail(e) {
         e.preventDefault();
 
-        emailjs.sendForm('pruebas', 'template_07kp3eb', e.target, 'user_qAr5BuiH5kTLY6BG2owHe')
+        emailjs.sendForm('lomoli', 'template_9ryeet9', e.target, 'user_78Gpd36t9QDfFTquJuuma')
             .then((result) => {
-                swal(" Gracias por solicitar su reserva. En breve le confirmaremos.");
+                swal(" Gracias. En breve le confirmaremos.");
             }, (error) => {
                 console.log(error.text);
             });
@@ -48,9 +48,9 @@ const contacta = () => {
                 <h1 className="mt-5">CONTACTA</h1>
                 <span></span>
                 <form onSubmit={sendEmail} >
-                    <input name="nombre" type="text" placeholder="Nombre" />
-                    <input name="correo" type="mail" placeholder="Correo" />
-                    <input name="telefono" type="number" placeholder="Telefono" />
+                    <input name="nombre" type="text" placeholder="Nombre" required/>
+                    <input name="correo" type="mail" placeholder="Correo" required/>
+                    <input name="telefono" type="number" placeholder="Telefono" required/>
                     <h2>OBSERVACIONES</h2>
                     <textarea name="solicitudes" id="" cols="47.8" rows="5"></textarea>
                     <button>ENVIAR</button>
