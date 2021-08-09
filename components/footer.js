@@ -2,8 +2,10 @@ const footer = () => {
     return (
         <>
             <div className="footer">
+
                 <h6>©2022 albert guillén group</h6>
-                <img className="logo-guillenGroup" src="/AGG logo.png" alt="albert guillen group" />
+
+                <a href="https://albertguillengroup.com/" target="_blank"><img className="logo-guillenGroup" src="/AGG logo.png" alt="albert guillen group" /></a>
             </div>
             <style jsx>{`
                 .footer{
